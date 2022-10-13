@@ -5,10 +5,6 @@ from HW05a_Function import git_rep
 import unittest
 
 
-@mock.patch('HW04a_function.git_rep', return_value= True, autospec = True)
-def test_gitapi(API, api):
-    assert git_rep(API) == "rajguru7337"
-    print(api)
 
 class test_rep(unittest.TestCase):
 
