@@ -13,7 +13,7 @@ jobs:
           command: |
             pip install pytest
             pip install requests
-            pytest --junitxml=test-results/junit.xml HW04a_unittest.py
+            pytest --junitxml=test-results/junit.xml HW05a_Function.py
       - store_test_results:
           path: test-results
 
