@@ -2,11 +2,10 @@ import unittest
 from unittest import mock
 from unittest.mock import Mock, patch, MagicMock
 from HW05a_Function import git_rep
-
 import unittest
 
 
-@mock.patch('HW05a_Function.git_rep', return_value= True, autospec = True)
+@mock.patch('HW04a_function.git_rep', return_value= True, autospec = True)
 def test_gitapi(API, api):
     assert git_rep(API) == "rajguru7337"
     print(api)
@@ -49,9 +48,5 @@ class test_rep(unittest.TestCase):
 if __name__ == '__main__':
     print('Running unit tests')
     unittest.main()
-
-
-
-
 
 
